@@ -1,3 +1,9 @@
+@font-face{
+    font-family: "Portico";
+    src: url("Portico_Regular.otf") format("OpenType");
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -27,16 +33,19 @@
     justify-content: center;
     margin-bottom: 10px;
     font-size: 42px;
+    font-family: 'Portico';
+    text-shadow: 0.5px 0.5px 1px #202020 ;
 }
 
 .row{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #fda058;
+    background: #ffdcc0;
     border-radius: 30px;
     padding-left: 10px;
     margin-bottom: 20px;
+    box-shadow: 1.5px 1px 8px rgba(95, 95, 95, 0.6);
 }
 
 input{
@@ -47,7 +56,7 @@ input{
     padding: 10px;
     font-size: 16px;
     font-weight: bold;
-    color: rgb(71, 71, 71);
+    color: #1b416d;
 }
 
 #btn{
@@ -55,12 +64,13 @@ input{
     padding: 10px 40px;
     border: none;
     outline: none;
-    background: #cdd2d8;
+    background: #fa911a;
     color: rgb(34, 34, 34);
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: -1px 0px 2px rgb(43, 43, 43);
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
+    font-family: "Poppins", sans-serif;
 }
 
 ul li{
@@ -86,13 +96,13 @@ ul li::before{
     left: 5px;
 }
 
-ul li#checked{
+ul li.checked{
     color: #818181;
     text-decoration: line-through;
     font-weight: normal;
 }
 
-ul li#checked::before{
+ul li.checked::before{
     background-image: url(checkbox-checked-solid-24.png);
 }
 
